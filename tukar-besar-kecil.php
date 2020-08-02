@@ -1,6 +1,15 @@
 <?php
 function tukar_besar_kecil($string){
 //kode di sini
+for($i=0;$i<strlen($string);$i++){
+    if(ctype_upper($string[$i])){
+        $string[$i] = strtolower($string[$i]);
+    }
+    else {
+        $string[$i] = strtoupper($string[$i]);
+    }
+}
+echo "$string<br>";
 }
 
 // TEST CASES
